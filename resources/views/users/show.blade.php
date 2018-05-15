@@ -65,6 +65,15 @@
     </style>
 </head>
 <body>
+@foreach (['danger', 'warning', 'success', 'info'] as $msg)
+    @if(session()->has($msg))
+        <div class="flash-message">
+            <p class="alert alert-{{ $msg }}">
+                {{ session()->get($msg) }}
+            </p>
+        </div>
+    @endif
+@endforeach
 <div class="flex-center position-ref full-height">
     @if (Route::has('login'))
         <div class="top-right links">
