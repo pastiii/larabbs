@@ -35,5 +35,6 @@ class UserController extends Controller
         return redirect()->route('users.show', [$user]);
         return xjsia d;
         return 我我我我我我我我我我我我我我我是是是是是一个 达萨碧
+        return 5 5 55 5;时
     }
 }
